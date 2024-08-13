@@ -42,7 +42,6 @@ document.addEventListener("DOMContentLoaded", function() {
         18: '6:30 - 7:00 : Momos Night Routine',
         19: '7:00 - 8:00 : Evening Walk',
         20: '8:00 - 9:00 : Night Routine',
-        21: '9:00 : Bedtime',
     };
 
     // Define secondary text for each hour
@@ -64,7 +63,6 @@ document.addEventListener("DOMContentLoaded", function() {
         18: '',
         19: '',
         20: '(Prep Clothes, Drink Tea, Prayer & Devo w/ Sam)',
-        21: '',
     };
 
     function formatTime(hour) {
@@ -90,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function renderCalendar() {
-        const hours = Array.from({ length: 18 }, (_, i) => i + 4); // 4am to 9pm
+        const hours = Array.from({ length: 17 }, (_, i) => i + 4); // 4am to 9pm
         const currentHour = new Date().getHours();
         calendarElement.innerHTML = ''; // Clear the calendar
 
