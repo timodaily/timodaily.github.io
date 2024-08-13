@@ -145,7 +145,7 @@ body.dark-mode .expanded {
     color: var(--primary-color);
     position: absolute;
     right: 8px;
-    top: 5px;
+    top: 3px;
     transform: translateY(0);
 }
 
